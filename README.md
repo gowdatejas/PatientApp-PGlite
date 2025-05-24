@@ -1,70 +1,275 @@
-# Getting Started with Create React App
+# 🏥 Patient Registration App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A frontend-only **React application** that allows users to register patients, execute raw SQL queries, and persist data using **Pglite** (SQLite in the browser). It supports **cross-tab synchronization** using the `BroadcastChannel` API and maintains persistence across browser refreshes.
 
-## Available Scripts
+------------------------------
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- ✅ **Register New Patients**  
+  Users can fill out a form to add new patients to the database.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ✅ **View All Records**  
+  Displays all patient entries in a clean table layout.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- ✅ **Run Raw SQL Queries**  
+  A panel allows users to write and execute custom SQL queries (e.g. `SELECT * FROM patients`).
 
-### `npm test`
+- ✅ **Data Persistence**  
+  Patient data is stored via IndexedDB, ensuring persistence across browser reloads.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ✅ **Cross-Tab Synchronization**  
+  Uses the `BroadcastChannel` API to keep all open tabs in sync in real time.
 
-### `npm run build`
+- ✅ **Responsive & Styled UI**  
+  Built with **MUI** components and custom styles using `@emotion/styled`.
+  
+-------------------------------
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🧪 Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React**
+- **JavaScript**
+- **Pglite** – WebAssembly SQLite
+- **BroadcastChannel API**
+- **Vercel** for deployment
+- **Netlify** for deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+------------------------------
 
-### `npm run eject`
+## STRUCTURE OF THE PROJECT
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+patient-registration-app/
+├── public/
+│   ├── index.html
+│   ├── styles.css
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   ├── PatientForm.js
+│   │   ├── PatientList.js
+│   │   ├── SqlQuery.js
+│   │   ├── Dashboard.js
+│   │   ├── LoadingSpinner.js
+│   ├── db/
+│   │   ├── DatabaseContext.js
+│   │   └── Pglite.js
+│   ├── pages/
+│   │   ├── HomePage.js
+│   │   ├── PatientsPage.js
+│   │   ├── QueryPage.js
+│   ├── App.js
+│   ├── index.js
+│   └── wasmLoader.js
+├── vercel.json
+├── package.json
+└── netify.toml
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-----------------------------------
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🛠️ Setup
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Prerequisites
+  - Node.js v18+
+  - npm v9+
+    
+## 📦 Getting Started
 
-## Learn More
+### 1. Clone the Repository & Install all the dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+bash:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   * ✅ npx create-react-app patient-registration-app      ---//creating project.
+   * ✅ cd patient-registration-app                        ---//changing directory.
+   * ✅ npm install @electric-sql/pglite                   ---//installing pglite for datastorage.
+   * ✅ npm install react-router-dom                       ---//installing router for rendering.
+   * ✅ npm install @mui/material                          ---//provides prebuilt, responsive & respnsive UI.
+   * ✅ npm install @emotion/react                         ---//package is part of popular css-in-JS library.
+   * ✅ npm install @emotion/styled                        ---//use to create styled components using a syntax.
+   * ✅ npm install @mui/icons-material                    ---//create custom styles on both native & MIUI component.
 
-### Code Splitting
+------------------------------------
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 2. Write the code
 
-### Analyzing the Bundle Size
+VsCode:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ -- in vscode write all the code which has shown in structure .
+ -- After writing the code go to src -> right click -> Integrated terminal -> npm install ( to install all the dependencies ) -> check every dependencies is installed properly
+ -- After installing -> in the same terminal -> npm start (to start the project)
 
-### Making a Progressive Web App
+-----------------------------------------
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+💻 Development
 
-### Advanced Configuration
+  bash
+   # Start development server
+   npm run dev
+    
+   # Run tests
+   npm test
+    
+   # Build for production
+   npm run build                  // same command for both vercel and netlify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+🌐 Deployment
+ 
+  --Netlify
 
-### Deployment
+  install netlify 
+   * ✅ npm install -g netlify-cli
+  Login to Netlify
+    * ✅ netlify login
+  Commit the code 
+    * ✅ git add netlify.toml
+         git commit -m "Add Netlify config"
+  Deploy to Netlify
+    * ✅ netlify deploy --prod
+     
+  Follow the prompts:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+  "Create & configure a new site" → Select your team (or personal account).
+  
+  "Site name" (optional): Press Enter to let Netlify auto-generate one.
+  
+  Wait for the build to complete.
 
-### `npm run build` fails to minify
+--------------------------------------------------------------
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  🌐 Deployment
+  
+  --Vercel
+  
+  install vercel 
+   * ✅ npm install -g vercel
+  Login to vercel
+    * ✅ vercel login
+  Commit the code 
+    * ✅ git add vercel.json
+         git commit -m "Add vercel config"
+  Deploy to Netlify
+    * ✅ vercel deploy --prod
+     
+Follow the prompts:
+
+  "Set up and deploy" → Press Enter for current directory
+  
+  "Link to existing project?" → Type N for new project
+  
+  "What's your project's name?" → Press Enter for default
+  
+  "Which scope do you want to deploy to?" → Select your account
+  
+  "Override settings?" → Type N
+
+---------------------------------------------    
+
+📝 Usage Instructions
+
+🏥 Dashboard :
+
+  -- Shows average age of total patient.
+  
+  -- shows count of number of patients.
+  
+  -- shows the count of male patients and female pateints.
+
+
+➕ Register Patient :
+
+  -- Fill out the form with Name, Age, Gender, and Contact.
+  
+  -- Click Register to save the record.
+
+🔍 Query with SQL :
+
+  -- Navigate to the SQL Query section.
+  
+  -- Type raw SQL like:
+  
+    ex: Select * from patents
+    
+  -- Results are displayed.
+
+🔄 Multiple Tabs :
+
+  -- Open multiple tabs of the app.
+  
+  -- Register or delete patients in one tab.
+  
+  -- All tabs will automatically refresh and reflect changes instantly.
+
+-----------------------------------------------
+
+🧠 How It Works
+
+  - ✅ Database: Uses pglite to run SQLite in the browser, stored via IndexedDB. Pglite provides a WebAssembly-based SQLite engine that stores the data using IndexedDB under the hood.
+  
+  - ✅ Cross-tab sync: BroadcastChannel broadcasts a refresh message on insert. BroadcastChannel API sends a sync event between tabs whenever an insert/query happens.
+  
+  - ✅ Persistence: IndexedDB ensures data survives page reloads and tab switches. MUI + Emotion ensures the interface is modern, responsive, and customizable.
+
+---------------------------------------------------
+
+🐛 Challenges Faced
+
+  -- WebAssembly Initialization Errors:
+      Initial attempts to load Pglite more than once across components caused race conditions. 
+      Fixed by centralizing DB logic in a pglite.js file and reusing one instance.
+  
+  -- Cross-Tab Sync Not Triggering Consistently:
+      Ensured that broadcast messages were correctly structured and listener logic updated 
+      state properly after receiving the signal.
+  
+  -- SQL Error Handling:
+      SQL syntax errors caused app crashes initially. Added try/catch handling and user- 
+      friendly error messages.
+  
+  -- Deployment Issues on Vercel & netlify:
+      Needed to ensure that vercel.json had correct base paths and that only frontend assets 
+      were bundled. and for netlify i Added _redirects file and Netlify configuration in netlify.toml that is 
+       [[redirects]]
+        from = "/*"
+        to = "/index.html"
+        status = 200
+        
+ -- Performance Optimization
+      it was too Slow rendering with 1000+ records.
+      so the Solution Added was windowing and query caching.
+
+-------------------------------------------------
+
+Commit History :
+
+   * - feat: Add patient registration form with validation. 
+   * - feat: Implement patient list view with pagination. 
+   * - feat: Add SQL query interface.
+   * - feat: Create analytics dashboard.
+   * - fix: Resolve 404 errors with Netlify redirects.
+   * - chore: Configure PGLite initialization.
+   * - docs: Add README and deployment instructions.
+
+--------------------------------------------------       
+    
+ 🌐 Live Demo
+ 
+ 🟢 Deployed on Vercel:
+ 
+  Link: 
+   🔗 https://patient-registration-app-one.vercel.app/
+ 
+ 🟢 Deployed on Netlify:
+
+  Link: 
+   🔗 https://patient-reg-app.netlify.app/
+
+---------------------------------------------------
+
+  📬 Contact
+   
+   Made by Tejas C M
+      🔗 GitHub: https://github.com/gowdatejas
+      📧 Email: tejasmgowda28@gmail.com
+
+
+      
