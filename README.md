@@ -94,7 +94,7 @@ patient-registration-app/
 ## 🛠️ Setup
 
 ### Prerequisites
-  - Node.js v18+
+  - Node.js v18+ 
   - npm v9+
     
 ## 📦 Getting Started
@@ -268,7 +268,7 @@ Follow the prompts:
 
   -- WebAssembly Initialization Errors:
       Initial attempts to load Pglite more than once across components caused race conditions. 
-      Fixed by centralizing DB logic in a pglite.js file and reusing one instance.
+      Fixed by centralizing DB logic in a pglite.js and connection db file and reusing one instance.
   
   -- Cross-Tab Sync Not Triggering Consistently:
       Ensured that broadcast messages were correctly structured and listener logic updated 
