@@ -11,7 +11,7 @@ const PatientForm = () => {
     medicalHistory: ''
   });
   const [alert, setAlert] = useState(null);
-
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
