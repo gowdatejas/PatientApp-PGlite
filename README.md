@@ -157,7 +157,8 @@ VsCode:
    npm test
     
    # Build for production
-   npm run build                  // same command for both vercel and netlify
+   // same command for both vercel and netlify
+   npm run build                  
 
 
 ## 🛠️ Check PGlite in webpage
