@@ -79,14 +79,29 @@ patient-registration-app/
 
 bash:
 
-   * ✅ npx create-react-app patient-registration-app      ---//creating project.
-   * ✅ cd patient-registration-app                        ---//changing directory.
-   * ✅ npm install @electric-sql/pglite                   ---//installing pglite for datastorage.
-   * ✅ npm install react-router-dom                       ---//installing router for rendering.
-   * ✅ npm install @mui/material                          ---//provides prebuilt, responsive & respnsive UI.
-   * ✅ npm install @emotion/react                         ---//package is part of popular css-in-JS library.
-   * ✅ npm install @emotion/styled                        ---//use to create styled components using a syntax.
-   * ✅ npm install @mui/icons-material                    ---//create custom styles on both native & MIUI component.
+     ---//creating project.
+   * ✅ npx create-react-app patient-registration-app
+     
+     ---//changing directory.                   
+   * ✅ cd patient-registration-app
+     
+     ---//installing pglite for datastorage.                                
+   * ✅ npm install @electric-sql/pglite
+     
+     ---//installing router for rendering.                 
+   * ✅ npm install react-router-dom
+     
+     ---//provides prebuilt, responsive & respnsive UI.                    
+   * ✅ npm install @mui/material
+     
+     ---//package is part of popular css-in-JS library.   
+   * ✅ npm install @emotion/react
+     
+     ---//use to create styled components using a syntax.                       
+   * ✅ npm install @emotion/styled
+     
+     ---//create custom styles on both native & MIUI component.     
+   * ✅ npm install @mui/icons-material                   
 
 ------------------------------------
 
@@ -118,11 +133,14 @@ VsCode:
 
   install netlify 
    * ✅ npm install -g netlify-cli
+     
   Login to Netlify
     * ✅ netlify login
+    
   Commit the code 
     * ✅ git add netlify.toml
          git commit -m "Add Netlify config"
+         
   Deploy to Netlify
     * ✅ netlify deploy --prod
      
@@ -142,11 +160,14 @@ VsCode:
   
   install vercel 
    * ✅ npm install -g vercel
+   * 
   Login to vercel
     * ✅ vercel login
+     
   Commit the code 
     * ✅ git add vercel.json
          git commit -m "Add vercel config"
+         
   Deploy to Netlify
     * ✅ vercel deploy --prod
      
@@ -168,36 +189,36 @@ Follow the prompts:
 
 🏥 Dashboard :
 
-  -- Shows average age of total patient.
-  
-  -- shows count of number of patients.
-  
-  -- shows the count of male patients and female pateints.
+    -- Shows average age of total patient.
+    
+    -- shows count of number of patients.
+    
+    -- shows the count of male patients and female pateints.
 
 
 ➕ Register Patient :
 
-  -- Fill out the form with Name, Age, Gender, and Contact.
-  
-  -- Click Register to save the record.
+    -- Fill out the form with Name, Age, Gender, and Contact.
+    
+    -- Click Register to save the record.
 
 🔍 Query with SQL :
 
-  -- Navigate to the SQL Query section.
-  
-  -- Type raw SQL like:
-  
+    -- Navigate to the SQL Query section.
+    
+    -- Type raw SQL like:
+    
     ex: Select * from patents
     
-  -- Results are displayed.
+    -- Results are displayed.
 
 🔄 Multiple Tabs :
 
-  -- Open multiple tabs of the app.
-  
-  -- Register or delete patients in one tab.
-  
-  -- All tabs will automatically refresh and reflect changes instantly.
+    -- Open multiple tabs of the app.
+    
+    -- Register or delete patients in one tab.
+    
+    -- All tabs will automatically refresh and reflect changes instantly.
 
 -----------------------------------------------
 
