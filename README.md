@@ -151,6 +151,19 @@ VsCode:
    # Build for production
    npm run build                  // same command for both vercel and netlify
 
+
+## 🛠️ Check PGlite in webpage
+
+  -- right click or ctrl+shift+i on the webpage
+
+  ->inspect
+  ->application
+  ->storage
+  ->indexDB
+  ->pglite / database name.
+
+  -----------------------------------------------------------------------------------
+
 🌐 Deployment
  
   --Netlify
