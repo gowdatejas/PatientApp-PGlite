@@ -40,11 +40,17 @@ A frontend-only **React application** that allows users to register patients, ex
 ## STRUCTURE OF THE PROJECT
 
 patient-registration-app/
+
 ├── public/
+
 │   ├── index.html
+
 │   ├── styles.cs
+
 │   └── favicon.ico
+
 ├── src/
+
 │   ├── components/
 │   │   ├── PatientForm.js
 │   │   ├── PatientList.js
