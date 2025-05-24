@@ -23,7 +23,6 @@ root.render(
   </div>
 );
 
-
 async function initializeApp() {
   try {
     await import('./wasmLoader');
