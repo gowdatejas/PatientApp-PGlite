@@ -42,7 +42,7 @@ A frontend-only **React application** that allows users to register patients, ex
 patient-registration-app/
 ├── public/
 │   ├── index.html
-│   ├── styles.css
+│   ├── styles.cs
 │   └── favicon.ico
 ├── src/
 │   ├── components/
@@ -79,7 +79,7 @@ patient-registration-app/
 
 bash:
 
-     ---//creating project.
+  ---//creating project.
    * ✅ npx create-react-app patient-registration-app
      
      ---//changing directory.                   
@@ -160,7 +160,7 @@ VsCode:
   
   install vercel 
    * ✅ npm install -g vercel
-   * 
+      
   Login to vercel
     * ✅ vercel login
      
@@ -189,36 +189,36 @@ Follow the prompts:
 
 🏥 Dashboard :
 
-    -- Shows average age of total patient.
+   -- Shows average age of total patient.
     
-    -- shows count of number of patients.
+   -- shows count of number of patients.
     
-    -- shows the count of male patients and female pateints.
+   -- shows the count of male patients and female pateints.
 
 
 ➕ Register Patient :
 
-    -- Fill out the form with Name, Age, Gender, and Contact.
+   -- Fill out the form with Name, Age, Gender, and Contact.
     
-    -- Click Register to save the record.
+   -- Click Register to save the record.
 
 🔍 Query with SQL :
 
-    -- Navigate to the SQL Query section.
+   -- Navigate to the SQL Query section.
     
-    -- Type raw SQL like:
+   -- Type raw SQL like:
     
     ex: Select * from patents
     
-    -- Results are displayed.
+   -- Results are displayed.
 
 🔄 Multiple Tabs :
 
-    -- Open multiple tabs of the app.
+   -- Open multiple tabs of the app.
     
-    -- Register or delete patients in one tab.
+   -- Register or delete patients in one tab.
     
-    -- All tabs will automatically refresh and reflect changes instantly.
+   -- All tabs will automatically refresh and reflect changes instantly.
 
 -----------------------------------------------
 
