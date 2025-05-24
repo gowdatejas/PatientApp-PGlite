@@ -134,8 +134,16 @@ bash:
 VsCode:
 
  -- in vscode write all the code which has shown in structure .
- -- After writing the code go to src -> right click -> Integrated terminal -> npm install ( to install all the dependencies ) -> check every dependencies is installed properly
- -- After installing -> in the same terminal -> npm start (to start the project)
+ 
+ -- After writing the code go to src -> right click
+ 
+ -> Integrated terminal
+ 
+ -> npm install ( to install all the dependencies ) -> check every dependencies is installed properly
+
+ -- After installing -> in the same terminal 
+ 
+ -> npm start (to start the project)
 
 -----------------------------------------
 
@@ -157,9 +165,13 @@ VsCode:
   -- right click or ctrl+shift+i on the webpage
 
   ->inspect
+  
   ->application
+  
   ->storage
+  
   ->indexDB
+  
   ->pglite / database name.
 
   -----------------------------------------------------------------------------------
