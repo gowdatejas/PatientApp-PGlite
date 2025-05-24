@@ -9,7 +9,7 @@ const Dashboard = () => {
     genderDistribution: {},
     recentRegistrations: []
   });
-
+  
   useEffect(() => {
     const calculateStats = async () => {
       const total = patients.length;
