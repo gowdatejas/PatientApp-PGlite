@@ -289,7 +289,8 @@ Commit History :
   📬 Contact
    
    Made by Tejas C M
-      🔗 GitHub: https://github.com/gowdatejas
+   
+  🔗 GitHub: https://github.com/gowdatejas
       
   📧 Email: tejasmgowda28@gmail.com
 
