@@ -8,7 +8,7 @@ export const DatabaseProvider = ({ children }) => {
   const [patients, setPatients] = useState([]);
   const [isInitialized, setIsInitialized] = useState(false);
   const [channel, setChannel] = useState(null);
-
+  
   useEffect(() => {
     let isMounted = true;
     let syncChannel = null;
