@@ -52,23 +52,41 @@ patient-registration-app/
 ├── src/
 
 │   ├── components/
+
 │   │   ├── PatientForm.js
+
 │   │   ├── PatientList.js
+
 │   │   ├── SqlQuery.js
+
 │   │   ├── Dashboard.js
+
 │   │   ├── LoadingSpinner.js
+
 │   ├── db/
+
 │   │   ├── DatabaseContext.js
+
 │   │   └── Pglite.js
+
 │   ├── pages/
+
 │   │   ├── HomePage.js
+
 │   │   ├── PatientsPage.js
+
 │   │   ├── QueryPage.js
+
 │   ├── App.js
+
 │   ├── index.js
+
 │   └── wasmLoader.js
+
 ├── vercel.json
+
 ├── package.json
+
 └── netify.toml
 
 -----------------------------------
@@ -138,17 +156,21 @@ VsCode:
   --Netlify
 
   install netlify 
+  
    * ✅ npm install -g netlify-cli
      
   Login to Netlify
-    * ✅ netlify login
+  
+  * ✅ netlify login
     
   Commit the code 
-    * ✅ git add netlify.toml
+  
+  * ✅ git add netlify.toml
          git commit -m "Add Netlify config"
          
   Deploy to Netlify
-    * ✅ netlify deploy --prod
+
+  * ✅ netlify deploy --prod
      
   Follow the prompts:
 
@@ -165,17 +187,21 @@ VsCode:
   --Vercel
   
   install vercel 
+  
    * ✅ npm install -g vercel
       
   Login to vercel
-    * ✅ vercel login
+  
+  * ✅ vercel login
      
   Commit the code 
-    * ✅ git add vercel.json
+  
+  * ✅ git add vercel.json
          git commit -m "Add vercel config"
          
   Deploy to Netlify
-    * ✅ vercel deploy --prod
+  
+  * ✅ vercel deploy --prod
      
 Follow the prompts:
 
