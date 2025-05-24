@@ -158,6 +158,7 @@ VsCode:
     
    # Build for production
    // same command for both vercel and netlify
+   
    npm run build                  
 
 
